@@ -49,7 +49,18 @@ media = sum(numeros_flutuantes) / len(numeros_flutuantes)
 # media = (numero4 + numero5) / 2
 
 # 8. Desenvolva um programa que calcule a potência de um número (base e expoente fornecidos pelo usuário).
+numero_base = float(input("Digite a base: "))
+expoente = float(input("Digite o expoente: "))
+potencia = numero_base ** expoente
+print(f"{numero_base} elevado a {expoente} é: {potencia}")
+
+
 # 9. Faça um programa que converta a temperatura de Celsius para Fahrenheit.
+celsius = float(input("Digite a temperatura em Celsius: "))
+# calculo matematico para converter Celsius para Fahrenheit = (C * 9/5) + 32 (or C * 1.8 + 32)
+fahrenheit = (celsius * 9/5) + 32
+print(f"{celsius}°C é igual a {fahrenheit}°F")
+
 # 10. Escreva um programa que calcule a área de um círculo, recebendo o raio como entrada.
 raio_do_circulo = float(input("digite o raio:"))
 # square = **2 = ao quadrado
@@ -60,8 +71,25 @@ print(f"A área do círculo com raio {raio_do_circulo} é: {area_do_circulo:.2f}
 # #### Strings (`str`)
 
 # 11. Escreva um programa que receba uma string do usuário e a converta para maiúsculas.
+str_usuario = input("Digite uma string: ")
+# método .upper() para converter a string para maiúsculas
+str_maiuscula = str_usuario.upper()
+print(f"A string em maiúsculas é: {str_maiuscula}")
+
+
 # 12. Crie um programa que receba o nome completo do usuário e imprima o nome com todas as letras minúsculas.
+nome_completo = input("Digite seu nome completo: ")
+# método .lower() para converter a string para minúsculas
+nome_minusculo = nome_completo.lower()
+print(f"Seu nome em minúsculas é: {nome_minusculo}")
+
 # 13. Desenvolva um programa que peça ao usuário para inserir uma frase e, em seguida, imprima esta frase sem espaços em branco no início e no final.
+escreva_frase = input("Digite uma frase: ")
+# método .strip() para remover os espaços em branco no início e no final da string
+frase_sem_espacos = escreva_frase.strip()
+print(
+    f"A frase sem espaços em branco no início e no final é: '{frase_sem_espacos}'")
+
 # 14. Faça um programa que peça ao usuário para digitar uma data no formato "dd/mm/aaaa" e, em seguida, imprima o dia, o mês e o ano separadamente.
 data = input("Digite uma data no formato dd/mm/aaaa: ")
 data_separada = data.split("/")
@@ -74,14 +102,24 @@ print(f"Mês: {mes}")   # Exibe o mês extraído da data
 print(f"Ano: {ano}")  # Exibe o ano extraído da data
 
 # 15. Escreva um programa que concatene duas strings fornecidas pelo usuário.
-
+string1 = input("Digite a primeira string: ")
+string2 = input("Digite a segunda string: ")
+print(f"A concatenação das strings é: {string1 + ',' + string2}")
 
 # #### Booleanos (`bool`)
 
 # 16. Escreva um programa que avalie duas expressões booleanas inseridas pelo usuário e retorne o resultado da operação AND entre elas.
+expressao1 = input("Digite a primeira expressão booleana (True/False): ")
+expressao2 = input("Digite a segunda expressão booleana (True/False): ")
+avaliacao_and = (expressao1 == "") and (expressao2 == "")
+print(f"O resultado da operação AND entre as expressões é: {avaliacao_and}")
+
 # 17. Crie um programa que receba dois valores booleanos do usuário e retorne o resultado da operação OR.
+
 # 18. Desenvolva um programa que peça ao usuário para inserir um valor booleano e, em seguida, inverta esse valor.
+
 # 19. Faça um programa que compare se dois números fornecidos pelo usuário são iguais.
+
 # 20. Escreva um programa que verifique se dois números fornecidos pelo usuário são diferentes.
 
 # #### try-except e if
