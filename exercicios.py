@@ -115,8 +115,21 @@ avaliacao_and = (expressao1 == "") and (expressao2 == "")
 print(f"O resultado da operação AND entre as expressões é: {avaliacao_and}")
 
 # 17. Crie um programa que receba dois valores booleanos do usuário e retorne o resultado da operação OR.
+valor8 = input("Digite o primeiro valor booleano (True/False): ")
+valor9 = input("Digite o segundo valor booleano (True/False): ")
+resulyado_OR = valor8 or valor9
+print(f"O resultado da operação OR entre os valores é: {resulyado_OR}")
 
 # 18. Desenvolva um programa que peça ao usuário para inserir um valor booleano e, em seguida, inverta esse valor.
+bool1 = input("Digite um valor booleano (True/False): ")
+if bool1 == "True" or 0:
+    bool_invertido = False
+elif bool1 == "False" or 0:
+    bool_invertido = True
+else:  # bool1 == "" condição errada para o script
+    bool_invertido = "Valor inválido. Por favor, insira 'True' ou 'False'."
+print(f"O valor booleano invertido é: {bool_invertido}")
+
 
 # 19. Faça um programa que compare se dois números fornecidos pelo usuário são iguais.
 
