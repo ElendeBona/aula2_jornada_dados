@@ -7,9 +7,17 @@ soma = num_int1 + num_int2
 print(f"A soma de {num_int1} e {num_int2} é: {soma}")
 
 # 2. Crie um programa que receba um número do usuário e calcule o resto da divisão desse número por 5.
+int_num = int(input("Digite um número inteiro: "))
+resto_divisao = int_num % 5
+print(f"O resto da divisão de {int_num} por 5 é: {resto_divisao}")
 
 
 # 3. Desenvolva um programa que multiplique dois números fornecidos pelo usuário e mostre o resultado.
+num1 = int(input("Digite o primeiro número inteiro: "))
+num2 = int(input("Digite o segundo número inteiro: "))
+produto = num1 * num2
+print(f"O produto de {num1} e {num2} é: {produto}")
+
 # 4. Faça um programa que peça dois números inteiros e imprima a divisão inteira do primeiro pelo segundo.
 numero1 = int(input("Digite o primeiro número inteiro: "))
 numero2 = int(input("Digite o segundo número inteiro: "))
@@ -19,11 +27,27 @@ resultado = numero1 // numero2
 print(f"A divisão inteira de {numero1} por {numero2} é: {resultado}")
 print(resultado)
 # 5. Escreva um programa que calcule o quadrado de um número fornecido pelo usuário.
+numero0 = int(input("Digite um número inteiro: "))
+numero0_ao_quadrado = numero0 ** 2
+print(f"O quadrado de {numero0} é: {numero0_ao_quadrado}")
 
 # #### Números de Ponto Flutuante (`float`)
 
 # 6. Escreva um programa que receba dois números flutuantes e realize sua adição.
+float_num1 = float(input("Digite o primeiro número flutuante: "))
+float_num2 = float(input("Digite o segundo número flutuante: "))
+soma_float = float_num1 + float_num2
+print(f"A soma de {float_num1} e {float_num2} é: {soma_float}")
+
 # 7. Crie um programa que calcule a média de dois números flutuantes fornecidos pelo usuário.
+numero4 = float(input("Digite o primeiro número flutuante: "))
+numero5 = float(input("Digite o segundo número flutuante: "))
+numeros_flutuantes = [numero4, numero5]
+media = sum(numeros_flutuantes) / len(numeros_flutuantes)
+# print(f"A média é: {media}")
+# OR
+# media = (numero4 + numero5) / 2
+
 # 8. Desenvolva um programa que calcule a potência de um número (base e expoente fornecidos pelo usuário).
 # 9. Faça um programa que converta a temperatura de Celsius para Fahrenheit.
 # 10. Escreva um programa que calcule a área de um círculo, recebendo o raio como entrada.
